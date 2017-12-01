@@ -1,0 +1,329 @@
+@import 'reset.css';
+
+
+/*next and back buttons to navigate through pages*/
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+}
+
+.previous {
+    background-color: transparent;
+    color: white;
+    position:absolute;
+    font-size: 50px;
+    transition: .5s ease;
+        left: 100px;
+        top: 340px;
+}
+
+.next {
+    background-color: transparent;
+    color: white;
+    position:absolute;
+    font-size: 50px;
+    transition: .5s ease;
+        left: 1100px;
+        top: 340px;
+}
+
+.nav {
+}
+
+.nav a {
+    /*enter site button design*/
+    background-color: Transparent;
+    cursor: pointer;
+    color: white;
+    font-family: 'source sans pro';
+    font-weight: 300;
+    font-size: 20px;
+
+    position:absolute;
+    transition: .5s ease;
+        left: 570px;
+        top: 420px;
+}
+.nav a:link{
+    text-decoration: none;
+}
+
+nav a:visited{
+    color: grey;
+}
+
+nav #active{
+    color: white;
+}
+
+body{}
+
+#background-images {   
+    /*makes background image fit to screen size*/
+    height: 100%;
+    margin: 0px;
+    background: url("images/.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    /*header font*/
+    color: white;
+    font-family: 'bebas neue';
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 220px;
+    text-align: center;
+}
+
+
+#titles {
+    /*titles for the pages*/
+    color: white;
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 100px;
+    font-family: 'bebas neue';
+    font-weight: 500;
+    font-size: 50px;
+}
+
+#titles1 {
+    /*titles for the pages*/
+    color: white;
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 450px;
+    font-family: 'bebas neue';
+    font-weight: 500;
+    font-size: 50px;
+}
+
+#titlesH {
+    /*titles for the pages*/
+    color: white;
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 130px;
+    padding-right: 200px;
+    font-family: 'bebas neue';
+    font-weight: 500;
+    font-size: 50px;
+}
+
+#titlesH1 {
+    /*titles for the pages*/
+    color: white;
+    position: absolute;
+    padding-top: 300px;
+    padding-left: 130px;
+    padding-right: 200px;
+    font-family: 'bebas neue';
+    font-weight: 500;
+    font-size: 50px;
+}
+
+#subtextCorals{
+    /*subtitle for the 4rth page*/
+    color: white;
+    position: absolute;
+    padding-top: 115px;
+    padding-left: 100px;
+    padding-right: 750px;
+    font-family: 'source sans pro';
+    font-weight: 300;
+    font-size: 16px;
+
+}
+
+#subtext{
+    /*subtitle for the pages*/
+    color: white;
+    position: absolute;
+    padding-top: 98px;
+    padding-left: 100px;
+    font-family: 'source sans pro';
+    font-weight: 300;
+    font-size: 25px;
+
+}
+
+#subtextH{
+    /*subtitle for the pages*/
+    color: white;
+    position: absolute;
+    padding-top: 180px;
+    padding-left: 130px;
+    padding-right: 430px;
+    font-family: 'source sans pro';
+    font-weight: 300;
+    font-size: 20px;
+
+}
+
+#subtextH1{
+    /*subtitle for the pages*/
+    color: white;
+    position: absolute;
+    padding-top: 490px;
+    padding-left: 130px;
+    padding-right: 430px;
+    font-family: 'source sans pro';
+    font-weight: 300;
+    font-size: 20px;
+
+}
+
+#longlat{
+    /*long and lat text*/
+    color: white;
+    position: absolute;
+    padding-top: 600px;
+    padding-left: 100px;
+    padding-right: 430px;
+    font-family: 'source sans pro';
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.vl {
+    /*vertical line*/
+    position: absolute;
+    left: 7%;
+    margin-left: -3px;
+    top: 10%;
+}
+
+.vl1 {
+    /*vertical line on 4rth page*/
+    position: absolute;
+    left: 7%;
+    margin-left: -3px;
+    top: 9%;
+}
+
+video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*animation code*/
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animated.infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  .animated.hinge {
+    animation-duration: 2s;
+  }
+  
+  .animated.flipOutX,
+  .animated.flipOutY,
+  .animated.bounceIn,
+  .animated.bounceOut {
+    animation-duration: .75s;
+  }
+
+  @keyframes bounce {
+    from, 20%, 53%, 80%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      transform: translate3d(0,0,0);
+    }
+  
+    40%, 43% {
+      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0,-4px,0);
+    }
+  }
+  
+  .bounce {
+    animation-name: bounce;
+    transform-origin: center bottom;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInLeft {
+    animation-name: slideInLeft;
+  }
+  @keyframes slideInRight {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInRight {
+    animation-name: slideInRight;
+  }
+  
