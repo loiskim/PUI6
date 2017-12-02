@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="style.css">
+         <link href="twentytwenty.css" rel="stylesheet" type="text/css" />
+         
+         <style>
+                body, html {
+                    height: 100%;
+                    margin: 0;
+                }
+        
+                .vl1 {
+                    border-left: 1px solid white;
+                    height: 130px;
+                }
+
+                .twentytwenty-container{
+                    z-index: -100;
+                }
+        
+        </style>
+
+        
+    </head>
+
+    <body>
+        <nav>
+        </nav>
+        <div class="container slideInLeft animated";>
+            <h1 id="titles">CORAL BLEACHING</h1>
+            <h2 id="subtextCorals">Theres a famous reef called Airport reef. Hover over to see the effects of global warming.</h2>
+        </div>
+        
+        <h3 id="longlat">DD COORDINATES: 25.3219012124 -80.2715304139</h3>
+        
+        <a href="4rth page.html" class="previous round">&#8249;</a>
+        <a href="6th page.html" class="next round">&#8250;</a>
+
+        <div class="bg"></div>
+        <div class="vl1"></div>
+
+        <div class="large-8 columns">
+            <div class="twentytwenty-container">
+                <img src="images/5.jpg" />
+                <img src="images/6.jpg" />
+            </div>
+        </div>
+
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        <script src="js/jquery.event.move.js"></script>
+        <script src="js/jquery.twentytwenty.js"></script>
+        <script>
+            $(function(){
+                $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+            });
+        </script>
+    </body>
+
+    
+
+</html>
